@@ -1,7 +1,6 @@
 # jquery.singlepage.js
 
-You can run code without a webserver if you use Mozilla Firefox
-
+You can run code without a webserver if you use Mozilla Firefox, clone the project and open index.html in firefox.
 
 Router:
 No need to hard code routes or write your own router... 
