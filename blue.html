@@ -1,0 +1,62 @@
+<script>
+
+    $(document).ready(function () {
+        var firstName = Router.getPathVariable('first_name');
+        $("#firstName").html(firstName);
+        var lastName = Router.getPathVariable('last_name');
+        $("#lastName").html(lastName);
+
+        /*var progress = 0;
+        var timer;
+
+        $("#progressModal").on('shown.bs.modal', function () {
+            function updateProgressBar() {
+                progress += 20;
+
+                if (progress > 120) {
+                    progress = 0;
+                }
+
+                $(".progress-bar").css("width", progress + "%");
+                $(".progress-bar").attr("aria-valuenow", progress);
+            }
+            timer = setInterval(function () {
+                updateProgressBar();
+            }, 200);
+
+        });
+
+        $('#progressModal').on('hidden.bs.modal', function(e) {
+            clearInterval(timer);
+            progress = 0;
+            $(".progress-bar").css("width", progress + "%");
+            $(".progress-bar").attr("aria-valuenow", progress);
+        });
+        */
+
+    });
+
+
+
+</script>
+
+<div class="page-header">
+    <h1>Blue Page </h1>
+</div>
+
+<div id="firstName"></div>
+<div id="lastName"></div>
+
+<a class="nav-link" data-show="div" data-target="#testDiv">Show Test</a>
+<a class="nav-link" data-hide="div" data-target="#testDiv">Hide Test</a>
+
+<a class="nav-link" data-toggle="modal" data-target="#progressModal">Show Progress</a>
+
+
+<div id="testDiv" style="display: none; margin-top: 100px;">
+    <h2>Test DIV</h2>
+</div>
+
+
+
+

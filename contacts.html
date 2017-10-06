@@ -1,0 +1,99 @@
+<script>
+    $(document).ready(function () {
+        var contact = new Contact();
+    });
+</script>
+
+<div class="page-header">
+        <h1>Contacts</h1>
+ </div>
+
+<div class="container">
+<div class="row">
+<div class="col-8">
+
+<table id="contactTable" class="table">
+	<thead class="">
+	<tr><th>Name</th><th>Email</th></tr>
+	</thead>
+	<tbody>
+	<script id="templateRow" type="text/template">
+        <tr>
+                <td><a href="javascript:void(0);" data-contactid="{{id}}" data-first_name="{{first_name}}" data-last_name="{{last_name}}" data-email="{{email}}" onclick="Contact.load(this)">{{first_name}} {{last_name}}</a></td>
+                <td>{{email}}</td>
+        </tr>
+	</script>
+	</tbody>
+	</table>
+
+</div>
+
+</div>
+</div>
+
+ 
+<div id="contactView"></div>
+
+
+<script id="contactTemplate" type="text/template">
+<div id="contactModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+	 <div class="modal-header">
+		<h5 class="modal-title">Contact</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+
+  	<form method="post" action="" class="form-horizontal" id="contactForm"  onsubmit="Form.ajaxSubmit(this,Contact.saved, Contact.saveError); return false;">
+  	<input type="hidden" name="cmd" value="saveContact">
+  	<input type="hidden" name="contactid" value="{{contactid}}">
+
+      <div class="modal-body">
+
+		<div style="height:45px; padding:5px;">
+		<div id ="contactModalSaved" style="display:none" class="alert alert-success fade show" role="alert"> 
+			<strong>Success</strong> Your Contact was saved! 
+		</div>
+
+		 <div id ="contactModalError" style="display:none" class="alert alert-danger fade show" role="alert">
+            <strong>Error</strong> Your Contact was not saved!
+        </div>
+		</div>
+
+		<br>
+
+   		<div class="form-group">
+    		<label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+    		<div class="col-sm-9">
+      			<input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="{{email}}" onfocus="Contact.clearMessages();">
+    		</div>
+  		</div>
+
+  		<div class="form-group">
+    	<label for="inputEmail3" class="col-sm-3 control-label">First Name</label>
+    		<div class="col-sm-9">
+      			<input type="first_name" class="form-control" id="first_name" placeholder="First Name" value="{{first_name}}" onfocus="Contact.clearMessages();">
+    		</div>
+  		</div>
+
+   		<div class="form-group">
+    	<label for="inputEmail3" class="col-sm-3 control-label">Last Name</label>
+    		<div class="col-sm-9">
+      			<input type="last_name" class="form-control" id="last_name" placeholder="Last Name" value="{{last_name}}" onfocus="Contact.clearMessages();">
+    		</div>
+		</div>
+
+</div><!-- /.modal-body -->
+      
+<div class="modal-footer">
+	<button type="button" class="btn btn-defaut" data-dismiss="modal">Close</button>
+	<button type="submit" class="btn btn-primary">Save changes</button>
+</div>
+
+</form>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</script>

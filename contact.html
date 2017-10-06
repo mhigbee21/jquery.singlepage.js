@@ -1,0 +1,59 @@
+<script>
+    $(document).ready(function () {
+        var id = Router.getPathVariable('id');
+		var contact = new Contact();
+		contact.loadContact(id);
+    });
+</script>
+
+
+<div id="contactView"></div>
+
+
+<script id="contactPage" type="text/template">
+<div class="col-8">
+
+<form method="post" action="" class="form-horizontal" id="contactForm"  onsubmit="Form.ajaxSubmit(this,Contact.saved, Contact.saveError); return false;">
+  	<input type="hidden" name="cmd" value="saveContact">
+  	<input type="hidden" name="contactid" value="{{contactid}}">
+
+		<div style="height:45px; padding:5px;">
+		<div id ="contactModalSaved" style="display:none" class="alert alert-success fade show" role="alert"> 
+			<strong>Success</strong> Your Contact was saved! 
+		</div>
+
+		 <div id ="contactModalError" style="display:none" class="alert alert-danger fade show" role="alert">
+            <strong>Error</strong> Your Contact was not saved!
+        </div>
+		</div>
+
+		<br>
+
+   		<div class="form-group">
+    		<label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+    		<div class="col-sm-9">
+      			<input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="{{email}}" onfocus="Contact.clearMessages();">
+    		</div>
+  		</div>
+
+  		<div class="form-group">
+    	<label for="inputEmail3" class="col-sm-3 control-label">First Name</label>
+    		<div class="col-sm-9">
+      			<input type="first_name" class="form-control" id="first_name" placeholder="First Name" value="{{first_name}}" onfocus="Contact.clearMessages();">
+    		</div>
+  		</div>
+
+   		<div class="form-group">
+    	<label for="inputEmail3" class="col-sm-3 control-label">Last Name</label>
+    		<div class="col-sm-9">
+      			<input type="last_name" class="form-control" id="last_name" placeholder="Last Name" value="{{last_name}}" onfocus="Contact.clearMessages();">
+    		</div>
+		</div>
+
+      
+	<button type="submit" class="btn btn-primary">Save changes</button>
+
+</form>
+
+</div>
+</script>

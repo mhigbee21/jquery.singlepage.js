@@ -1,0 +1,19 @@
+
+<script>
+
+$( document ).ready(function() {
+	var firstName = Router.getUriParameterByName('first_name');
+	$("#firstName").html( firstName );
+	var lastName = Router.getUriParameterByName('last_name'); 
+	$("#lastName").html( lastName );
+});
+
+</script>
+
+ <div class="page-header">
+        <h1>Red Page </h1>
+</div>
+
+
+<div id="firstName"></div>
+<div id="lastName"></div>
