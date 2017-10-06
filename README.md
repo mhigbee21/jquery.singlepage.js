@@ -1,5 +1,7 @@
 # jquery.singlepage.js
 
+You can run code without a webserver if you use Mozilla Firefox
+
 
 Router:
 No need to hard code routes or write your own router... 
