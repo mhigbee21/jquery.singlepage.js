@@ -1,5 +1,5 @@
 /*!
- * jquery.singlepage.js v1.1 (http://githublinkgoeshere..)
+ * jquery.singlepage.js v1.1 (https://github.com/mhigbee21/jquery.singlepage.js)
  * Copyright 2017 Mark Higbee
  * Licensed under the MIT license
  */
