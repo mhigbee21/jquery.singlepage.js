@@ -3,7 +3,7 @@
 You can run code without a webserver if you use Mozilla Firefox, clone the project and open index.html in firefox.
 
 ## Router:
-No need to hard code routes or write your own router... 
+No need to hard code routes or write your own router...  See [index.html](index.html)
 
 ```
 usage: /#{{htmlfilename}}
