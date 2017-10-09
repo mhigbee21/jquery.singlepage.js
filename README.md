@@ -71,8 +71,15 @@ See [contact.html](contact.html) and [contacts.html](contacts.html).  Controller
 
 
 ```
-js/controllers/ContactController.js 
-js/services/ContactService.js
+contact.html
+<script>
+    $(document).ready(function () {
+        var id = Router.getPathVariable('id');
+		var contact = new Contact();
+		contact.loadContact(id);
+    });
+</script>
+
 ```
 
 
