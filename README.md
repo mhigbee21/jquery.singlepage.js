@@ -2,7 +2,7 @@
 
 You can run code without a webserver if you use Mozilla Firefox, clone the project and open index.html in firefox.
 
-##Router:
+## Router:
 No need to hard code routes or write your own router... 
 
 ```
@@ -26,11 +26,12 @@ $(document).ready(function () {
 <div id="myApp"></div>
 ```
 
-##Route Parameters
+## Route Parameters
 The router supports nvp routes or SEO friendly routes 
 
 NVP Example: 
 
+```
 Load red.html 
  <a class="nav-link disabled" href="/#red/?first_name=red&last_name=leader">Red Page</a>
 
@@ -43,9 +44,9 @@ $( document ).ready(function() {
 	$("#lastName").html( lastName );
 });
 </script>
+```
 
-
-
+```
 SEO Friendly Example;
 Load blue.html
 
@@ -62,7 +63,7 @@ blue.html parse params
         $("#lastName").html(lastName);
 });
 </script>
-
+```
 
 NO need to inject controllers or services... Simply use them as needed...
 See contact.html and contacts.html 
@@ -72,9 +73,10 @@ js/services/ContactServices.js
 
 
 
-
+## Templates
 Templates uses mustache merge tags 
 
+```
 <script id="contactTemplate" type="text/template">
 <p>contactid: {{contactid}}</p>
 <p>first name: {{firstName}}</p>
@@ -85,5 +87,5 @@ Templates uses mustache merge tags
  var html = Template.renderTemplate("contactTemplate",data);
  $("#contactView").html( html );
 </script>
-
+```
 
