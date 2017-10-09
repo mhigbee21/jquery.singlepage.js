@@ -108,3 +108,8 @@ Templates uses mustache merge tags
 ## Authors
 
 * **Mark Higbee**  
+
+
+## License
+
+This project is licensed under the MIT License
