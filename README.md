@@ -46,8 +46,9 @@ $( document ).ready(function() {
 </script>
 ```
 
+SEO Friendly Example:
+
 ```
-SEO Friendly Example;
 Load blue.html
 
  <a class="nav-link disabled" href="/#blue/first_name/blue/last_name/leader">Blue Page</a>
