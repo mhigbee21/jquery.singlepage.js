@@ -89,5 +89,10 @@ Templates uses mustache merge tags
  var html = Template.renderTemplate("contactTemplate",data);
  $("#contactView").html( html );
 </script>
+
+
+<div id="contactView"></div>
+
+
 ```
 
