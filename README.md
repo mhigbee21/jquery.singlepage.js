@@ -57,7 +57,7 @@ Load blue.html
 blue.html parse params
 
 <script>
-(document).ready(function () {
+$(document).ready(function () {
         var firstName = Router.getPathVariable('first_name');
         $("#firstName").html(firstName);
         var lastName = Router.getPathVariable('last_name');
