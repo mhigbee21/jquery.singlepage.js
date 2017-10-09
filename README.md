@@ -70,9 +70,11 @@ NO need to inject controllers or services... Simply use them as needed...
 See [contact.html](contact.html) and [contacts.html](contacts.html) 
 
 ```
-[js/controllers/ContactController.js](https://github.com/mhigbee21/jquery.singlepage.js/blob/master/js/controllers/ContactController.js) 
+js/controllers/ContactController.js 
 js/services/ContactServices.js
 ```
+
+[js/controllers/ContactController.js](js/controllers/ContactController.js)
 
 
 ## Templates
