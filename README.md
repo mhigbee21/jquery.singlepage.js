@@ -2,13 +2,16 @@
 
 You can run code without a webserver if you use Mozilla Firefox, clone the project and open index.html in firefox.
 
-Router:
+##Router:
 No need to hard code routes or write your own router... 
+
+```
 usage: /#{{htmlfilename}}
 /#red -> red.html
 /#blue -> blue.html
+```
 
-
+```
 <script src="js/jquery-3.2.1.min.js"> </script>
 <script src="js/jquery.singlepage.js?v=1"></script>
 
@@ -21,8 +24,9 @@ $(document).ready(function () {
 
         
 <div id="myApp"></div>
+```
 
-
+##Route Parameters
 The router supports nvp routes or SEO friendly routes 
 
 NVP Example: 
