@@ -75,6 +75,7 @@ js/services/ContactServices.js
 ```
 
 [js/controllers/ContactController.js](js/controllers/ContactController.js)
+[js/services/ContactServices.js](js/services/ContactServices.js)
 
 
 ## Templates
