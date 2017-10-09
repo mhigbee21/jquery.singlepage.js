@@ -67,7 +67,7 @@ $(document).ready(function () {
 ```
 
 NO need to inject controllers or services... Simply use them as needed...
-See [contact.html](contact.html) and [contacts.html](contacts.html)  [js/controllers/ContactController.js](js/controllers/ContactController.js) [js/services/ContactServices.js](js/services/ContactServices.js)
+See [contact.html](contact.html) and [contacts.html](contacts.html).  Controller Example: [js/controllers/ContactController.js](js/controllers/ContactController.js)  Service Example: [js/services/ContactServices.js](js/services/ContactServices.js)
 
 
 ```
