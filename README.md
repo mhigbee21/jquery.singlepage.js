@@ -69,9 +69,10 @@ blue.html parse params
 NO need to inject controllers or services... Simply use them as needed...
 See contact.html and contacts.html 
 
+```
 js/controllers/ContactController.js 
 js/services/ContactServices.js
-
+```
 
 
 ## Templates
